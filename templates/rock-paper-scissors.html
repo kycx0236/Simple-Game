@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Rock, Paper, Scissors | Game{% endblock title %}
+{% block link %} <link rel="stylesheet" href="{{ url_for('static', filename='first-game.css') }}"> {% endblock %}
+
+{% block content %}
+
+    <body>
+
+        <h2> Computer choice: <span id='computer-choice'> </span> </h2>
+        <h2> User's choice: <span id='users-choice'> </span> </h2>
+        <h2> Result: <span id='result'> </span> </h2>
+
+        <button class="game-button" id="rock"> Rock </button>
+        <button class="game-button" id="paper"> Paper </button>
+        <button class="game-button" id="scissors"> Scissors </button>
+
+
+    </body>
+
+    <script src="{{ url_for('static', filename="first-game.js") }}"></script>
+{% endblock %}
